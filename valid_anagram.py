@@ -3,22 +3,18 @@
 #Brue Force Approach using dict(hashmap)
 #Time Complexity: 0(n)
 def isAnagram(s: str, t: str) -> bool:
-        
+    
+    if len(s) != len(t):
+        return False
+    
     s_dict = {}
     t_dict = {}
 
-    for letter in s:
-        s_dict[letter] = 1 + s_dict.get(letter, 0)
+    for i in range(len(s)):
+        s_dict[s[i]] = 1 + s_dict.get(s[i], 0)
+        t_dict[t[i]] = 1 + t_dict.get(t[i], 0)
         
-    for letter in t:
-        t_dict[letter] = 1 + t_dict.get(letter, 0)
-        
-    if s_dict == t_dict:
-        return True
-        
-    else:
-        return False
-    
+    return s_dict == t_dict
 
 #Using Sorted built in function.
 #Time Complexity: O(nlogn). The time it takes to sort
