@@ -10,5 +10,4 @@ This repo is for all the **NeetCode-style problems** I solve as I practice data 
 | Dec 9th, 2025  | [Valid Anagram](https://neetcode.io/problems/is-anagram/question?list=neetcode150)| [valid_anagram.py](https://github.com/sujitanireddy/Neat-Code/blob/main/valid_anagram.py)
 | Dec 9th, 2025  | [Two Sum](https://neetcode.io/problems/two-integer-sum/question?list=neetcode150)| [two_sum.py](https://github.com/sujitanireddy/Neat-Code/blob/main/two_sum.py)
 | Dec 10th, 2025  | [Group Anagrams](https://neetcode.io/problems/anagram-groups/question?list=neetcode150)| [group_anagrams.py](https://github.com/sujitanireddy/Neat-Code/blob/main/group_anagrams.py)
-
-                               
+| Jan 15th, 2026  | [Build Hashmap](https://www.boot.dev/lessons/f1585e95-a8c5-4643-9aca-1579d7482e90)| [build_hashmap.py](https://github.com/sujitanireddy/Neat-Code/blob/main/build_hashmap.py)
