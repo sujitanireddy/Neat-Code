@@ -121,3 +121,21 @@ class Trie:
                     matched_words.add(substring)
 
         return matched_words
+    
+
+    #Functions to find the longest common prefix of a list of words
+    def longest_common_prefix(self):
+        current = self.root
+        prefix = ""
+        while True:
+            children = []
+            for key in current.keys():
+                if key == self.end_symbol:
+                    break
+                children.append(key)
+            if len(children) == 1:
+                prefix += children[0]
+                current = current[children[0]]
+            else:
+                break
+        return prefix
