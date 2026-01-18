@@ -96,3 +96,28 @@ class Trie:
             current_level = current_level[c]
 
         return self.search_level(current_level, prefix, matching_words)
+    
+    #function to find substring matches.
+    def find_matches(self, document):
+        
+        matched_words = set()
+
+        for i in range(len(document)):
+
+            current_level = self.root
+
+            for j in range(i, len(document)):
+
+                if document[j] not in current_level:
+                    break
+
+                else:
+                    current_level = current_level[document[j]]
+
+                if self.end_symbol in current_level:
+
+                    substring = document[i:j + 1]
+
+                    matched_words.add(substring)
+
+        return matched_words
