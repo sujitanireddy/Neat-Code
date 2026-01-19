@@ -97,30 +97,24 @@ class Trie:
 
         return self.search_level(current_level, prefix, matching_words)
     
-    #function to find substring matches.
-    def find_matches(self, document):
-        
-        matched_words = set()
-
+    #function to find substring matches with advance matching (including variations)
+    def advanced_find_matches(self, document, variations):
+        matches = set()
         for i in range(len(document)):
-
-            current_level = self.root
-
+            level = self.root
             for j in range(i, len(document)):
+                ch = document[j]
 
-                if document[j] not in current_level:
+                if ch in variations:
+                    ch = variations[ch]
+                
+                if ch not in level:
                     break
-
-                else:
-                    current_level = current_level[document[j]]
-
-                if self.end_symbol in current_level:
-
-                    substring = document[i:j + 1]
-
-                    matched_words.add(substring)
-
-        return matched_words
+                    
+                level = level[ch]
+                if self.end_symbol in level:
+                    matches.add(document[i : j + 1])
+        return matches
     
 
     #Functions to find the longest common prefix of a list of words
