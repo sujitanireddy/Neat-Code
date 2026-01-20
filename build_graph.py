@@ -1,6 +1,7 @@
 #Building Graph from scratch as part of boot.dev course work
 
 class Graph:
+
     def __init__(self, num_vertices):
         self.graph = []
 
@@ -50,3 +51,26 @@ class Graph:
                 no_connections.append(key)
 
         return no_connections
+    
+    #BFS Algorithm
+    def breadth_first_search(self, v):
+
+        v_visited = []
+        v_queue = []
+
+        v_queue.append(v)
+
+        while v_queue != []:
+
+            popped_v = v_queue.pop(0)
+            v_visited.append(popped_v)
+
+            sorted_neighbors = sorted(self.graph[popped_v])
+
+            for neighbor in sorted_neighbors:
+
+                if neighbor not in v_visited and neighbor not in v_queue:
+
+                    v_queue.append(neighbor)
+
+        return v_visited
