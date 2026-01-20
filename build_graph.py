@@ -33,3 +33,20 @@ class Graph:
             self.graph[v].add(u)
         else:
             self.graph[v] = set([u])
+    
+    #helper function to retrive all the adjacent nodes
+    def adjacent_nodes(self, node):
+
+        return self.graph[node]
+    
+    #Fucntion to find unconnected_vertices
+    def unconnected_vertices(self):
+
+        keys = self.graph.keys()
+        no_connections = []
+        
+        for key in keys:
+            if self.graph[key] == set():
+                no_connections.append(key)
+
+        return no_connections
