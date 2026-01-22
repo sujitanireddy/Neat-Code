@@ -35,3 +35,20 @@ def helper(res, arr, n):
             else:
                 arr[0], arr[n - 1] = arr[n - 1], arr[0]
     return res
+
+#given a path function to verify (Runs in polynomial time)
+def verify_tsp(paths, dist, actual_path):
+
+    distance = 0
+    
+    for i in range(len(actual_path) - 2):
+
+        distance += paths[actual_path[i]][actual_path[i+1]]
+
+    if distance < dist:
+
+        return True
+
+    else:
+
+        return False
