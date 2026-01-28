@@ -1,6 +1,6 @@
 # NEAT Code 🥃
 
-This repo is for all the **NeetCode-style problems** I solve as I practice data structures and algorithms.
+This repo is for all the **LeetCode style problems** I solve as I practice data structures and algorithms.
 
 ## Log
 
