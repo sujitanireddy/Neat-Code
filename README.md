@@ -18,3 +18,4 @@ This repo is for all the **LeetCode style problems** I solve as I practice data 
 | Jan 24th, 2026  | [Subset Sum](https://www.boot.dev/lessons/3f0939be-d5da-45fb-9a18-573451c9752d)| [subset_sum_problem.py](https://github.com/sujitanireddy/Neat-Code/blob/main/subset_sum_problem)
 | Jan 26th, 2026  | [Encode Decode String](https://neetcode.io/problems/string-encode-and-decode/question)| [encode_decode_strings.py](https://github.com/sujitanrireddy/Neat-Code/blob/main/encode_decode_stings)
 | Jan 27th, 2026  | [Product Except Self](https://neetcode.io/problems/products-of-array-discluding-self/question?list=neetcode150)| [product_except_self.py](https://github.com/sujitanireddy/Neat-Code/blob/main/product_except_self.py)
+| Jan 28th, 2026  | [Valid Sudoku](https://neetcode.io/problems/valid-sudoku/question?list=neetcode150)| [valid_sudoku.py](https://github.com/sujitanireddy/Neat-Code/blob/main/valid_sudoku.py)

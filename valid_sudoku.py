@@ -50,6 +50,17 @@ def isValidSudoku(board: list[list[str]]) -> bool:
     
     
 
+#Write the solution in Neetcode way.
+
+
+
+
+
+
+
+
+
+
 #Example Board for testing
 board=[["1","2",".",".","3",".",".",".","."],
        ["4",".",".","5",".",".",".",".","."],
