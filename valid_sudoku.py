@@ -1,5 +1,7 @@
 #Question: https://neetcode.io/problems/valid-sudoku/question?list=neetcode150
 
+import collections
+
 #Function to calculate the unique sub-boxes
 def sub_boxes(board, start_index_i, end_index_i, start_index_j, end_index_j):
         seen_sub_square = set()
@@ -49,27 +51,41 @@ def isValidSudoku(board: list[list[str]]) -> bool:
     return True
     
     
+#Example Board for testing
+board= [["1","2",".",".","3",".",".",".","."],
+        ["4",".",".","5",".",".",".",".","."],
+        [".","9","8",".",".",".",".",".","3"],
+        ["5",".",".",".","6",".",".",".","4"],
+        [".",".",".","8",".","3",".",".","5"],
+        ["7",".",".",".","2",".",".",".","6"],
+        [".",".",".",".",".",".","2",".","."],
+        [".",".",".","4","1","9",".",".","8"],
+        [".",".",".",".","8",".",".","7","9"]]
+
 
 #Write the solution in Neetcode way.
+def isValidSudoku_neetway(board: list[list[str]]) -> bool:
 
+    cols = collections.defaultdict(set)
+    rows = collections.defaultdict(set)
+    squares = collections.defaultdict(set)
 
+    if len(board) != 9:
+        return False
 
+    for r in range(9):
+        for c in range(9):
+            if board[r][c] == ".":
+                continue
+            if (board[r][c] in rows[r]
+                or board[r][c] in cols[c]
+                or board[r][c] in squares[(r //3, c//3)]):
+                return False
+            
+            rows[r].add(board[r][c])
+            cols[c].add(board[r][c])
+            squares[(r //3, c //3)].add(board[r][c])
+            print(cols)
+    return True 
 
-
-
-
-
-
-
-#Example Board for testing
-board=[["1","2",".",".","3",".",".",".","."],
-       ["4",".",".","5",".",".",".",".","."],
-       [".","9","1",".",".",".",".",".","3"],
-       ["5",".",".",".","6",".",".",".","4"],
-       [".",".",".","8",".","3",".",".","5"],
-       ["7",".",".",".","2",".",".",".","6"],
-       [".",".",".",".",".",".","2",".","."],
-       [".",".",".","4","1","9",".",".","8"],
-       [".",".",".",".","8",".",".","7","9"]]
-
-print(isValidSudoku(board))
+print(isValidSudoku_neetway(board))
