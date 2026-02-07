@@ -21,3 +21,4 @@ This repo is for all the **LeetCode style problems** I solve as I practice data 
 | Jan 28th, 2026  | [Valid Sudoku](https://neetcode.io/problems/valid-sudoku/question?list=neetcode150)| [valid_sudoku.py](https://github.com/sujitanireddy/Neat-Code/blob/main/valid_sudoku.py)
 | Jan 29th, 2026  | [Longest Concecutive Sequence](https://neetcode.io/problems/longest-consecutive-sequence/question?list=neetcode150)| [longest_consecutive_sequence.py](https://github.com/sujitanireddy/Neat-Code/blob/main/longest_consecutive_sequence.py)
 | Jan 30th, 2026  | [First Unique Char](https://leetcode.com/problems/first-unique-character-in-a-string/description/)| [first_unique_char](https://github.com/sujitanireddy/Neat-Code/blob/main/first_unique_char.py)
+| Feb 6th, 2026  | [Valid Parenthese](https://neetcode.io/problems/validate-parentheses/question)| [valid_Parentheses.py](https://github.com/sujitanireddy/Neat-Code/blob/main/valid_Parentheses.py)
