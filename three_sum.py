@@ -2,7 +2,7 @@
 #Brute Force method 
 #Time complexity: O(n**4)
 #Space complexity: O(n**2)
-def threeSum(self, nums: list[int]) -> list[list[int]]:
+def threeSum(nums: list[int]) -> list[list[int]]:
 
     triplets = []
 
