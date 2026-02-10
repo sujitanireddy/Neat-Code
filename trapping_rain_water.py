@@ -9,7 +9,7 @@ Algorithm: Find the water trapped at each index and sum them up.
     - Once we have the max the formaula is min(max_left, max_right) - height[i]
 """
 
-def trap(height: list[int]) -> int:
+def trap_brute_force(height: list[int]) -> int:
 
     rain_trapped = 0
 
@@ -28,6 +28,68 @@ def trap(height: list[int]) -> int:
         rain_trapped += min(max_right_height, max_left_height) - height[i]
     
     return rain_trapped
+
+
+#Time Complexity: O(n)
+#Space Complexity: O(n)
+"""
+Algorithm: Find the water trapped at each indexand sum them up (Reference -> https://neetcode.io/problems/trapping-rain-water/solution)
+    - Basically the same algoritm as the brute force method, however we save the min and max heights for each position so that we don't have to compute every single time.
+    - This approach will drop the time complexity to liner time, however takes extra space for saving the arrays.
+"""
+def trap(height: list[int]) -> int:
+
+    length = len(height)
+
+    #building left max array
+    left_max = [0] * length
+    left_max_so_far = 0
+    for i in range(1, length):
+        left_max_so_far = max(left_max_so_far, height[i-1])
+        left_max[i] = left_max_so_far
+    
+    #building right max array
+    right_max = [0] * length
+    right_max_so_far = 0
+    for j in range(length - 2, -1, -1):
+        right_max_so_far = max(right_max_so_far, height[j+1])
+        right_max[j] = right_max_so_far
+
+    #computing water trapped at each index
+    water_trapped_at_each_index = []
+    for i in range(length):
+        water_trapped = min(left_max[i], right_max[i]) - height[i]
+        if water_trapped < 0:
+             water_trapped_at_each_index.append(0)
+        else:
+            water_trapped_at_each_index.append(water_trapped)
+    return sum(water_trapped_at_each_index)
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 print(trap(height=[0,1,0,2,1,0,1,3,2,1,2,1]))
