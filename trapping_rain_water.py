@@ -66,33 +66,39 @@ def trap(height: list[int]) -> int:
     return sum(water_trapped_at_each_index)
 
 
+#Most Optimal Way: Time Complexity: O(n), Space Complexity: O(1)
+"""
+Algorithm: Compute the water trapped at each index without additional space and sum it up.
+    - We know that we need the minimun of both left and right heights as that's the max water we can trap.
+    - Let's initiate two pointers: l = start, r = end
+        - Until both of them meet:
+            - keep track of the highest so far by moving the left and right pointers accordingly, so that we always know the minimum so far (and min is what we care about)
+            - keep adding to the water trapped so far
+"""
 
+def trap_optimal(height):
 
+    l, r = 0, len(height) - 1 
+    max_left, max_right = height[l], height[r]
+    water_trapped = 0
+
+    while l < r:
+
+        if max_left <= max_right:
+            max_left = max(max_left, height[l])
+            water_trapped += max_left - height[l]
+            l +=1 
+        else:
+            max_right = max(max_right, height[r])
+            water_trapped += max_right - height[l]
+            r -=1
     
-    
+    return water_trapped
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-print(trap(height=[0,1,0,2,1,0,1,3,2,1,2,1]))
+#Testing
+print(trap_optimal(height=[0,1,0,2,1,0,1,3,2,1,2,1]))
 
 
     
