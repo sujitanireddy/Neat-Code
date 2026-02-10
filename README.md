@@ -23,3 +23,4 @@ This repo is for all the **LeetCode style problems** I solve as I practice data 
 | Jan 30th, 2026  | [First Unique Char](https://leetcode.com/problems/first-unique-character-in-a-string/description/)| [first_unique_char](https://github.com/sujitanireddy/Neat-Code/blob/main/first_unique_char.py)
 | Feb 6th, 2026  | [Valid Paranthese](https://neetcode.io/problems/validate-parentheses/question)| [valid_Parentheses.py](https://github.com/sujitanireddy/Neat-Code/blob/main/valid_Parentheses.py)
 | Feb 9th, 2026  | [Three Sum](https://neetcode.io/problems/three-integer-sum/question?list=neetcode150)| [three_sum.py](https://github.com/sujitanireddy/Neat-Code/blob/main/three_sum.py)
+| Feb 10th, 2026  | [Trapping Rain Water](https://neetcode.io/problems/trapping-rain-water/question?list=neetcode150)| [trapping_rain_water.py](https://github.com/sujitanireddy/Neat-Code/blob/main/trapping_rain_water.py)
