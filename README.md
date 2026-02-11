@@ -24,3 +24,5 @@ This repo is for all the **LeetCode style problems** I solve as I practice data 
 | Feb 6th, 2026  | [Valid Paranthese](https://neetcode.io/problems/validate-parentheses/question)| [valid_Parentheses.py](https://github.com/sujitanireddy/Neat-Code/blob/main/valid_Parentheses.py)
 | Feb 9th, 2026  | [Three Sum](https://neetcode.io/problems/three-integer-sum/question?list=neetcode150)| [three_sum.py](https://github.com/sujitanireddy/Neat-Code/blob/main/three_sum.py)
 | Feb 10th, 2026  | [Trapping Rain Water](https://neetcode.io/problems/trapping-rain-water/question?list=neetcode150)| [trapping_rain_water.py](https://github.com/sujitanireddy/Neat-Code/blob/main/trapping_rain_water.py)
+| Feb 11th, 2026  | [Reverse Polish Notation](https://neetcode.io/problems/evaluate-reverse-polish-notation/question?list=neetcode150)| [reverse_polish_notation.py](https://github.com/sujitanireddy/Neat-Code/blob/main/reverse_polish_notation.py)
+| Feb 11th, 2026  | [Daily Temperatures](https://neetcode.io/problems/daily-temperatures/question)| [daily_temperatures.py](https://github.com/sujitanireddy/Neat-Code/blob/main/daily_temperatures.py)
