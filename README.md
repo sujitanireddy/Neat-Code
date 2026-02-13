@@ -27,3 +27,4 @@ This repo is for all the **LeetCode style problems** I solve as I practice data 
 | Feb 11th, 2026  | [Reverse Polish Notation](https://neetcode.io/problems/evaluate-reverse-polish-notation/question?list=neetcode150)| [reverse_polish_notation.py](https://github.com/sujitanireddy/Neat-Code/blob/main/reverse_polish_notation.py)
 | Feb 11th, 2026  | [Daily Temperatures](https://neetcode.io/problems/daily-temperatures/question)| [daily_temperatures.py](https://github.com/sujitanireddy/Neat-Code/blob/main/daily_temperatures.py)
 | Feb 12th, 2026  | [Car Flet](https://neetcode.io/problems/car-fleet/question)| [car_fleet.py](https://github.com/sujitanireddy/Neat-Code/blob/main/car_fleet.py)
+| Feb 13th, 2026  | [Largest Rectangle in histogram](https://neetcode.io/problems/largest-rectangle-in-histogram/question)| [largest-rectangle-in-histogram.py](https://github.com/sujitanireddy/Neat-Code/blob/main/largest-rectangle-in-histogram.py)
