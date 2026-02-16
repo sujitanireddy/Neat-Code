@@ -28,3 +28,6 @@ This repo is for all the **LeetCode style problems** I solve as I practice data 
 | Feb 11th, 2026  | [Daily Temperatures](https://neetcode.io/problems/daily-temperatures/question)| [daily_temperatures.py](https://github.com/sujitanireddy/Neat-Code/blob/main/daily_temperatures.py)
 | Feb 12th, 2026  | [Car Flet](https://neetcode.io/problems/car-fleet/question)| [car_fleet.py](https://github.com/sujitanireddy/Neat-Code/blob/main/car_fleet.py)
 | Feb 13th, 2026  | [Largest Rectangle in histogram](https://neetcode.io/problems/largest-rectangle-in-histogram/question)| [largest-rectangle-in-histogram.py](https://github.com/sujitanireddy/Neat-Code/blob/main/largest-rectangle-in-histogram.py)
+| Feb 16th, 2026  | [Binary Search](https://neetcode.io/problems/binary-search/question?list=neetcode150)| [binary_search.py](https://github.com/sujitanireddy/Neat-Code/blob/main/binary_search.py)
+| Feb 16th, 2026  | [Search 2D Matrix](https://neetcode.io/problems/search-2d-matrix/question?list=neetcode150)| [search-2d-matix.py](https://github.com/sujitanireddy/Neat-Code/blob/main/search-2d-matix.py)
+| Feb 16th, 2026  | [Koko eating bananas](https://neetcode.io/problems/eating-bananas/question?list=neetcode150)| [eating-bananas.py](https://github.com/sujitanireddy/Neat-Code/blob/main/eating-bananas.py)
