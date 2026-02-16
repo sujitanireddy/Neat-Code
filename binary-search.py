@@ -1,7 +1,7 @@
 #Question -> https://neetcode.io/problems/binary-search/question?list=neetcode150
 
 class Solution:
-    def search(self, nums: List[int], target: int) -> int:
+    def search(self, nums: list[int], target: int) -> int:
 
         L, R = 0, len(nums) - 1
 

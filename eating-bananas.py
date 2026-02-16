@@ -23,8 +23,6 @@ class Solution:
             min_speed +=1
 
 
-
-
     def minEatingSpeed(self, piles: list[int], h: int) -> int:
 
         def time_taken(mid):
