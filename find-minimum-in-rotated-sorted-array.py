@@ -12,7 +12,7 @@ class Solution:
     def findMin_optimal(self, nums: list[int]) -> int:
 
         n = len(nums)
-        r = n - 1 
+        r = n - 1
         l = 0
 
         while l < r:
