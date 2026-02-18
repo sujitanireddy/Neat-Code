@@ -6,6 +6,27 @@ class Solution:
     def findMin_bruteforce(self, nums: list[int]) -> int:
         return min(nums)
     
+    #Vidoe -> https://www.youtube.com/watch?v=H2U24n4bcQQ
+    #Algorithm: if mid > r: it means that the min element is is to the right because in a sorted array mid is never greater then r. 
+    #If mid !> r then the else condition would be: mid might be the min elemnet so m = r. When both r and l meet we can return either r or l.
+    def findMin_optimal(self, nums: list[int]) -> int:
+
+        n = len(nums)
+        r = n - 1 
+        l = 0
+
+        while l < r:
+
+            mid = (l + r)//2 
+
+            if nums[mid] > nums[r]:
+                l = mid + 1
+            
+            else:
+                r = mid
+        
+        return nums[r]
+
 
     """
         Intution:
@@ -55,7 +76,7 @@ class Solution:
 
 #testing
 sol = Solution()
-result = sol.findMin([4,5,6,7])
+result = sol.findMin_optimal([3,4,5,6,1,2])
 print(result)
 
         
