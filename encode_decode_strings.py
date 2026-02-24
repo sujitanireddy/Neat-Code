@@ -40,7 +40,22 @@ class Solution:
             i = end_of_the_word
         
         return decoded_list
+    
 
 
 
+"""
+Notes:
 
+- "For loop" already has a defined iterator. Modifying "i" within the loop does not affect the iterator. If you want to jump, while loop is the goto option.
+    
+Example:
+
+    for i in range(5):
+    print(f"Start of iteration: i = {i}")
+    i = 100  # This gets ignored!
+    print(f"After manual change: i = {i}")
+
+- "i" should not be incremented to "the end_of_the_word + 1". Because end_of_the_word is already pointing to the start of the word.
+
+"""
