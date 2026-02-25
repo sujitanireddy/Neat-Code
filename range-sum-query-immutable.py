@@ -18,9 +18,17 @@ class NumArray:
     
 
 class NumArray_optimal:
+
+    #Time Complexity: Everytime sumRange is called, it's going to be O(1) as we precomputed the prefix sums
      
     def __init__(self, nums: list[int]):
-        pass
+        self.prefix_sums = []
+        sum = 0
+        for num in nums:
+            sum += num
+            self.prefix_sums.append(sum)
 
     def sumRange(self, left: int, right: int) -> int:
-        pass
+        left_prefix = self.prefix_sums[left - 1] if left > 0 else 0  
+        right_prefix = self.prefix_sums[right]
+        return right_prefix - left_prefix
