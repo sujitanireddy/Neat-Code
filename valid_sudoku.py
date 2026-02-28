@@ -85,7 +85,34 @@ def isValidSudoku_neetway(board: list[list[str]]) -> bool:
             rows[r].add(board[r][c])
             cols[c].add(board[r][c])
             squares[(r //3, c //3)].add(board[r][c])
-            print(cols)
     return True 
 
 print(isValidSudoku_neetway(board))
+
+
+#Revision run
+def isValidSudoku_revision(board: list[list[str]]) -> bool:
+
+    #Hashsets to store uniquevalues per row, col and square
+
+    rows = collections.defaultdict(set)
+    cols = collections.defaultdict(set)
+    squares = collections.defaultdict(set)
+
+    for r in range(9): #sudoku board is 9x9
+        for c in range(9):
+
+            if board[r][c] == ".":
+                continue
+
+            if (board[r][c] in rows[r] 
+                or board[r][c] in cols[c]
+                or board[r][c] in squares[(r//3, c//3)]):  #we are considering each 3x3 sub square
+
+                return False
+            
+            rows[r].add(board[r][c])
+            cols[c].add(board[r][c])
+            squares[(r//3, c//3)].add(board[r][c])
+    
+    return True
