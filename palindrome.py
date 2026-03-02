@@ -1,3 +1,5 @@
+#Question -> https://neetcode.io/problems/is-palindrome/question?list=neetcode150
+
 #Valid Palindrome - Two pointer algorithm
 def is_palindrome(word):
 
@@ -5,7 +7,13 @@ def is_palindrome(word):
 
     while L < R:
 
-        if word[L] == word[R]:
+        while L < R and not word[L].isalnum():
+            L += 1
+        
+        while L < R and not word[R].isalnum():
+            R -= 1
+
+        if word[L].lower() == word[R].lower():
             
             L += 1
             R -= 1
@@ -15,11 +23,11 @@ def is_palindrome(word):
     
     return True
 
-print(is_palindrome(word=""))
+print(is_palindrome(word="Was it a car or a cat I saw?"))
 
 
 #Valid Palindrome the regular way. Can also use list slicing[::-1] to reverse a string.
-def isPalindrome(self, s: str) -> bool:
+def isPalindrome_On(self, s: str) -> bool:
 
     reversed_s = ''
     for i in range(len(s) - 1, -1 , -1):
