@@ -60,6 +60,9 @@ def threeSum(nums: list[int]) -> list[list[int]]:
 
             while l < r and nums[l] == nums[l-1]: #skipping duplicates within two sum problem and making sure both pointers never crossed each other
                 l+=1
+            
+            while l < r and nums[r] == nums[r+1]:
+                r-=1
     
     return triplets
             
