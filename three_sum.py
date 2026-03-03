@@ -70,3 +70,17 @@ def threeSum(nums: list[int]) -> list[list[int]]:
 print(threeSum(nums=[-1,0,1,2,-1,-4]))
 
 
+#3-Sum problem revision
+#Date - March 3rd 2026
+"""
+Algorithm: 
+- Sort the input array in place.
+- For each number in the sorted array. 
+    - If the number is positive there is no point is searching because all numbers are going to be positive in our search area going forward as the array is sorted.
+    - If the number we are at is positive and is previously seen (nums[i] == nums[i-1]) then skip it as we shouldn't capture duplicates in our triplets.
+    - Do a two pointer search (while L < R)
+        - If the triplet is found. Capture it.
+            - Move L and R respectively 
+            - Using a while loop make sure L and R pointers are skipped if they are duplicates. i.e while L < R and nums[L] == nums[L-1] move L pointer. Same with right pointer.
+"""
+
