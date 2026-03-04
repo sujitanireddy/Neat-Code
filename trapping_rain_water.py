@@ -5,8 +5,8 @@
 """
 Algorithm: Find the water trapped at each index and sum them up.
     - To find the water trapped at each index we need the max height to the left and max height to the right of the index.
-    - We can do that by initalizing two pointers at height[i] and then finding the max to the left and right.
-    - Once we have the max the formaula is min(max_left, max_right) - height[i]
+    - We can do that by initializing two pointers at height[i] and then finding the max to the left and right.
+    - Once we have the max the formula is min(max_left, max_right) - height[i]
 """
 
 def trap_brute_force(height: list[int]) -> int:
@@ -33,8 +33,8 @@ def trap_brute_force(height: list[int]) -> int:
 #Time Complexity: O(n)
 #Space Complexity: O(n)
 """
-Algorithm: Find the water trapped at each indexand sum them up (Reference -> https://neetcode.io/problems/trapping-rain-water/solution)
-    - Basically the same algoritm as the brute force method, however we save the min and max heights for each position so that we don't have to compute every single time.
+Algorithm: Find the water trapped at each indexed sum them up (Reference -> https://neetcode.io/problems/trapping-rain-water/solution)
+    - Basically the same algorithm as the brute force method, however we save the min and max heights for each position so that we don't have to compute every single time.
     - This approach will drop the time complexity to liner time, however takes extra space for saving the arrays.
 """
 def trap(height: list[int]) -> int:
@@ -69,7 +69,7 @@ def trap(height: list[int]) -> int:
 #Most Optimal Way: Time Complexity: O(n), Space Complexity: O(1)
 """
 Algorithm: Compute the water trapped at each index without additional space and sum it up.
-    - We know that we need the minimun of both left and right heights as that's the max water we can trap.
+    - We know that we need the minimum of both left and right heights as that's the max water we can trap.
     - Let's initiate two pointers: l = start, r = end
         - Until both of them meet:
             - keep track of the highest so far by moving the left and right pointers accordingly, so that we always know the minimum so far (and min is what we care about)
