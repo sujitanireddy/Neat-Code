@@ -18,13 +18,13 @@ def largestRectangleArea_BruteForce(heights: list[int]) -> int:
 
 
 """
-This video was helpful in understanding how the stack alogirthm works -> https://www.youtube.com/watch?v=ZGMw8Bvpwd4
+This video was helpful in understanding how the stack algorithm works -> https://www.youtube.com/watch?v=ZGMw8Bvpwd4
 
-Algorithm: Intution: can the height extend to the right? If it can it means that the bar is higher than what is on top of the stack currently, so we keep adding to the stack.
-    - If the top of the stack height is < current height: it means that we cannot draw a rect as an extenstion, so we pop() and compute the area on the fly and update
+Algorithm: Intuition: can the height extend to the right? If it can it means that the bar is higher than what is on top of the stack currently, so we keep adding to the stack.
+    - If the top of the stack height is < current height: it means that we cannot draw a rect as an extension, so we pop() and compute the area on the fly and update
     max area so far. (Note: We also have to update the idx of the top of the stack element to the popped index)
     - After traversing through the entire array and if there are still elements in the stack that means that these heights can be extended till the end.
-        - So we just keep popping and comupting the area until the stack is empty
+        - So we just keep popping and computing the area until the stack is empty
 """
 #Time Complexity: O(n), Space Complexity: O(n)
 def largestRectangleArea(heights: list[int]) -> int:
@@ -47,7 +47,6 @@ def largestRectangleArea(heights: list[int]) -> int:
             start = popped_idx
 
         stk.append((h, start))
-
 
     while stk:
 
