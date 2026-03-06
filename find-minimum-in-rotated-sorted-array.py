@@ -6,9 +6,9 @@ class Solution:
     def findMin_bruteforce(self, nums: list[int]) -> int:
         return min(nums)
     
-    #Vidoe -> https://www.youtube.com/watch?v=H2U24n4bcQQ
+    #Video -> https://www.youtube.com/watch?v=H2U24n4bcQQ
     #Algorithm: if mid > r: it means that the min element is is to the right because in a sorted array mid is never greater then r. 
-    #If mid !> r then the else condition would be: mid might be the min elemnet so m = r. When both r and l meet we can return either r or l.
+    #If mid !> r then the else condition would be: mid might be the min element so m = r. When both r and l meet we can return either r or l.
     def findMin_optimal(self, nums: list[int]) -> int:
 
         n = len(nums)
@@ -29,7 +29,7 @@ class Solution:
 
 
     """
-        Intution:
+        Intuition:
         A rotated sorted array consists of two sorted subarrays.
         Example: [3, 4, 5, 1, 2]
 
