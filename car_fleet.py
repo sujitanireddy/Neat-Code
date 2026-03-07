@@ -32,4 +32,28 @@ def carFleet(target: int, position: list[int], speed: list[int]) -> int:
 
 #for testing
 print(carFleet(target=12, position=[10,8,0,5,3],speed=[2,4,1,1,3]))
+
+
+#solved Carfleet with Veera
+class Solution:
+    def carFleet(self, target: int, position: List[int], speed: List[int]) -> int:
+
+        veera_stk = []
+
+        pos_speed = list(zip(position, speed))
+
+        pos_speed.sort(reverse=True)
+
+        for p, s in pos_speed:
+
+            time_taken = (target - p) / s
+
+            veera_stk.append(time_taken)
+
+            if len(veera_stk) >= 2 and veera_stk[-1] <= veera_stk[-2]:
+
+                veera_stk.pop()
+
+        return len(veera_stk)
+
         
