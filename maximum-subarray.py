@@ -7,7 +7,7 @@ The idea of Kadane's algorithm is to traverse over the array from left to right 
 
 class Solution:
 
-    #Intution - Keep adding to the sum. If at any point the sum is less than 0. Reset and again keep adding.
+    #Intuition - Keep adding to the sum. If at any point the sum is less than 0. Reset and again keep adding.
     #If negative numbers are involved then keep track of the maximum so far. 
 
     def maxSubArray(self, nums: list[int]) -> int:
