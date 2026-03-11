@@ -19,8 +19,8 @@ class Solution:
             return float(nums1[mid])
     
     """
-    Intution: Watch this video -> https://www.youtube.com/watch?v=LPFhl65R7ww
-    Alogrithm:
+    Intuition: Watch this video -> https://www.youtube.com/watch?v=LPFhl65R7ww
+    Algorithm:
         - Binary search for a partition point in the smallest array of both given arrays
         - Validate if that partition point is valid.
         - If valid: return based on the len of the combined array
@@ -48,8 +48,8 @@ class Solution:
 
             #if the elements to the right are 0. We are comparing with "inf". 
             #nums1[nums1_left_elements] is grabbing the left most element in the right partition array.
-            min_right_nums1 = float("inft") if nums1_left_elements == m else nums1[nums1_left_elements] #if left side len is equal to m then no element is on the right side
-            min_right_nums2 = float("inft") if nums2_left_elements == n else nums2[nums2_left_elements] #if left side len is equal to n then no element is on the right side
+            min_right_nums1 = float("inf") if nums1_left_elements == m else nums1[nums1_left_elements] #if left side len is equal to m then no element is on the right side
+            min_right_nums2 = float("inf") if nums2_left_elements == n else nums2[nums2_left_elements] #if left side len is equal to n then no element is on the right side
 
 
             #we found the partition point
