@@ -35,7 +35,7 @@ class Solution:
         m = len(nums1)
         n = len(nums2)
         l = 0
-        r = m
+        r = m #we are searching how many elements from nums1 go into the left partition, so the total possibilities are m+1 hence we use m.
 
         while l <= r:
             nums1_left_elements = (r + l) // 2
