@@ -123,4 +123,11 @@ class Solution:
         
         return triplets
 
+#3-Sum problem revision (2)
+#Date - March 19th 2026
+
+class Solution:
+    def threeSum(self, nums: list[int]) -> list[list[int]]:
+
+        #solve in the evening
 
