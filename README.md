@@ -40,3 +40,4 @@ This repo is for all the **LeetCode style problems** I solve as I practice data 
 | Feb 27th, 2026  | [Top-k-elements-in-list](https://neetcode.io/problems/top-k-elements-in-list/question?list=neetcode150)| [top-k-elements-in-list.py](https://github.com/sujitanireddy/Neat-Code/blob/main/rtop-k-elements-in-list.py)
 | March 2nd, 2026  | [Valid Palindrome](https://neetcode.io/problems/is-palindrome/question?list=neetcode150150)| [palindrome.py](https://github.com/sujitanireddy/Neat-Code/blob/main/palindrome.py)
 | March 3rd, 2026  | [Max Water container](https://neetcode.io/problems/max-water-container/question?list=neetcode150150)| [max-water-container.py](https://github.com/sujitanireddy/Neat-Code/blob/main/max-water-container.py)
+| March 20th, 2026  | [Buy and sell crypto](https://neetcode.io/problems/buy-and-sell-crypto/question?list=neetcode150)| [buy-and-sell-crypto.py](https://github.com/sujitanireddy/Neat-Code/blob/main/buy-and-sell-crypto.py)
