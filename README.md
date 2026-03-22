@@ -41,3 +41,4 @@ This repo is for all the **LeetCode style problems** I solve as I practice data 
 | March 2nd, 2026  | [Valid Palindrome](https://neetcode.io/problems/is-palindrome/question?list=neetcode150150)| [palindrome.py](https://github.com/sujitanireddy/Neat-Code/blob/main/palindrome.py)
 | March 3rd, 2026  | [Max Water container](https://neetcode.io/problems/max-water-container/question?list=neetcode150150)| [max-water-container.py](https://github.com/sujitanireddy/Neat-Code/blob/main/max-water-container.py)
 | March 20th, 2026  | [Buy and sell crypto](https://neetcode.io/problems/buy-and-sell-crypto/question?list=neetcode150)| [buy-and-sell-crypto.py](https://github.com/sujitanireddy/Neat-Code/blob/main/buy-and-sell-crypto.py)
+| March 23th, 2026  | [Contains Duplicate II](https://neetcode.io/problems/contains-duplicate-ii/question)| [contains-duplicate-ii.py](https://github.com/sujitanireddy/Neat-Code/blob/main/contains-duplicate-ii.py)
