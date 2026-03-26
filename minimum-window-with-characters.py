@@ -1,7 +1,10 @@
 #Question -> https://neetcode.io/problems/minimum-window-with-characters/question?list=neetcode150
 
-import collections
 
+#Time Complexity: O(n)
+#Space Complexity: O(n)
+
+import collections
 def minWindow(s: str, t: str) -> str:
 
     t_map = collections.defaultdict(int)
