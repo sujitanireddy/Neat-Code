@@ -2,6 +2,8 @@
 
 This repo is for all the **LeetCode style problems** I solve as I practice data structures and algorithms.
 
+Update (March 30, 2026): This repo is no longer used to actively track my progress. The platform I use to practice DSA (Neetcode) rolled out an auto-commit feature that pushes submissions directly to GitHub, so I've switched to letting it handle that automatically. Going forward, all submissions can be found in -> [neetcode-submissions](https://github.com/sujitanireddy/neetcode-submissions)
+
 ## Log
 
 | Date           | Problem              | Solution                          
@@ -49,3 +51,5 @@ This repo is for all the **LeetCode style problems** I solve as I practice data 
 | March 26th, 2026  | [minimum-window-with-characters](https://neetcode.io/problems/minimum-window-with-characters/question?list=neetcode150)| [minimum-window-with-characters.py](https://github.com/sujitanireddy/Neat-Code/blob/main/minimum-window-with-characters.py)
 | March 26th, 2026  | [concat_strings_in_C](https://www.boot.dev/lessons/d3fe56ab-a7bf-4847-9fd7-299f1fe5fe03)| [concat_strings.c](https://github.com/sujitanireddy/Neat-Code/blob/main/concat_strings.c)
 | March 29th, 2026  | [sliding-window-maximum](https://neetcode.io/problems/sliding-window-maximum/question?list=neetcode150)| [sliding-window-maximum.py](https://github.com/sujitanireddy/Neat-Code/blob/main/sliding-window-maximum.py)
+
+Progress being tracked at -> [neetcode-submissions](https://github.com/sujitanireddy/neetcode-submissions)
